@@ -1,0 +1,13 @@
+ Electronic gadget addiction is a growing concern, particularly among students 
+and young professionals, as it negatively impacts mental health, academic performance, and 
+productivity. This project aims to develop a machine learning model using the Random 
+Forest algorithm to predict the likelihood and severity of gadget addiction based on various 
+behavioral and psychological factors. By analyzing user activity patterns, screen time, social 
+media usage, sleep disturbances, and self-reported dependency levels, the Random Forest 
+model effectively identifies key predictors and classifies users into different risk categories. 
+Comparative analysis with traditional classification methods highlights the superior accuracy 
+and robustness of the Random Forest algorithm in handling high-dimensional, nonlinear 
+datasets. The system is designed to provide actionable insights to users, parents, and 
+educators by offering personalized recommendations to mitigate addiction risks. By 
+leveraging data-driven predictions, this approach enables early intervention strategies, 
+promoting healthier digital habits and improving overall well-being.
