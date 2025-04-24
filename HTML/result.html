@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medilab</title>
+  <meta name="description" content="REVIVE a 3 minute stress test">
+  <meta name="keywords" content="stress test using Machine learning">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/font-awesome.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style4.css')}}">
+  
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!--banner-->
+  <section id="banner" class="banner">
+    <div class="bg-color">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+              <a class="navbar-brand" href="#"><img src="{{url_for('static',filename='img/logo.png')}}" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class=""><a href="/">Home</a></li>
+                <li class=""><a href="prediction1">Quiz Based Test</a></li>
+                <li class=""><a href="/sentiment">Sentiment Based Test</a></li>
+                <li class="active"><a href="">Result</a></li>
+                <li class=""><a href="upload">Upload</a></li>
+                <li class=""><a href="chart">Accuracy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="banner-info">
+            <div class="banner-logo text-center">
+             
+            </div>
+            <div class="banner-text text-center">
+              {% block code_block %}<h1 class="white">{{result}}</h1>{% endblock %}
+              <p>To Know more about Impact and Suggestion scroll Below</p>
+            </div>
+            <div class="overlay-detail text-center">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ banner-->
+
+   <!--about-->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div style="visibility: visible;" class="col-sm-9 more-features-box">
+            <div class="more-features-box-text">
+              <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+              <div class="more-features-box-text-description">
+                <h3>Stage 1. No Impact of Gadget Addictions.</h3>
+                <h4>Description:</h4>
+                  <p>Students in this stage show minimal gadget usage, with little to no impact on their academic performance, social relationships, or mental well-being.</p>
+
+<h4>Suggestions:</h4>
+
+   <p>Maintain Balance: Continue with current habits but stay mindful of potential overuse.
+   Awareness: Participate in workshops or sessions on healthy gadget use to stay informed.
+   Regular Breaks: Practice taking regular breaks from screens to prevent future dependency.</p>
+              </div>
+            </div>
+            <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+              <div class="more-features-box-text-description">
+                <h3>Stage 2. Moderate Usage with Minor Impact.</h3>
+                <h4>Description:</h4>
+                  <p>Students are using gadgets moderately, with some impact on sleep and a slight decrease in academic performance or social interaction.</p>
+
+<h4>Suggestions:</h4>
+
+   <p>Set Limits: Establish clear time limits for gadget use, especially during study hours.
+Prioritize Sleep: Avoid using gadgets at least an hour before bedtime to improve sleep quality.
+Alternative Activities: Engage in offline activities, such as sports or hobbies, to balance screen time.</p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ about-->
+   <!--about-->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div style="visibility: visible;" class="col-sm-9 more-features-box">
+            <div class="more-features-box-text">
+              <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+              <div class="more-features-box-text-description">
+                <h3>Stage 3. Frequent Usage with Noticeable Impact.</h3>
+                <h4>Description:</h4>
+                  <p>Gadget usage is frequent, leading to noticeable impacts on academic performance, sleep patterns, and social interactions.</p>
+
+<h4>Suggestions:</h4>
+
+   <p>Maintain Balance: Continue with current habits but stay mindful of potential overuse.
+   Awareness: Participate in workshops or sessions on healthy gadget use to stay informed.
+   Regular Breaks: Practice taking regular breaks from screens to prevent future dependency.</p>
+              </div>
+            </div>
+            <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+              <div class="more-features-box-text-description">
+                <h3>Stage 4. High Usage with Significant Impact.</h3>
+                <h4>Description:</h4>
+                  <p>High gadget usage is significantly affecting academic performance, causing anxiety, and leading to poor social relationships.</p>
+
+<h4>Suggestions:</h4>
+
+   <p>Professional Help: Seek guidance from a counselor or mental health professional to manage anxiety and dependency.
+Focus on Academics: Create a structured study plan with minimized gadget use to improve academic performance.
+Social Interaction: Encourage face-to-face interactions and participation in social activities without gadget dependency.</p>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ about-->
+ <!--about-->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div style="visibility: visible;" class="col-sm-9 more-features-box">
+            <div class="more-features-box-text">
+              <div class="more-features-box-text-icon"> <i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+              <div class="more-features-box-text-description">
+                <h3>Stage 5. Severe Dependency with Major Impact.</h3>
+                <h4>Description:</h4>
+                  <p>Students in this stage exhibit severe dependency on gadgets, leading to major impacts on mental health, academic failure, and social isolation.</p>
+
+<h4>Suggestions:</h4>
+
+   <p>Immediate Intervention: Engage with a mental health professional for tailored intervention plans.
+Rehabilitation Programs: Consider enrolling in programs designed to help manage and reduce gadget addiction.
+Parental/Guardian Involvement: Involve parents or guardians in creating a supportive environment to reduce gadget dependency.
+Educational Focus: Implement strict guidelines for gadget use during study times and encourage academic engagement without electronic distractions.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ about-->
+  <!--cta 2-->
+  <section id="cta-2" class="section-padding">
+    <div class="container">
+      <div class=" row">
+        <div class="col-md-2"></div>
+        <div class="text-right-md col-md-4 col-sm-4">
+          <h2 class="section-title white lg-line">« A few words<br> about us »</h2>
+        </div>
+        <div class="col-md-4 col-sm-5">
+          This project focuses on predicting the impact of electronic gadget addiction on students' lives using machine learning. By collecting data on students' gadget usage habits and their effects on academic performance, social interactions, and mental health, the project aims to identify different stages of addiction. Machine learning models will be employed to analyze this data, providing insights and tailored recommendations to help students manage and reduce their dependency on electronic devices, ultimately promoting a healthier balance between technology use and daily life.
+          <p class="text-right text-primary"><i>— ElectroStress Team</i></p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </section>
+  <!--cta-->
+  <!--footer-->
+  <footer id="footer">
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">About Us</h4>
+            </div>
+            <div class="info-sec">
+              <p>Passonate and Innovative Developer to provide Solution to Practical Reallife Issues.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Quick Links</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="quick-info">
+                <li><a href="index.html"><i class="fa fa-circle"></i>Home</a></li>
+                <li><a href="#service"><i class="fa fa-circle"></i>Demo</a></li>
+                <li><a href="#contact"><i class="fa fa-circle"></i>Appointment</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Follow us</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="social-icon">
+                <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+                <li class="bgred"><i class="fa fa-google-plus"></i></li>
+                <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+                <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            © Copyright ElectroStress. All Rights Reserved
+            <div class="credits">
+            
+              Designed by <a href="https://www.gadgets360.com/">ElectroStress</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/ footer-->
+
+  <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/jquery.easing.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/custom.js')}}"></script>
+
+
+
+
+</body>
+
+</html>
